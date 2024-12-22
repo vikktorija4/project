@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для введення даних</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="open-modal-btn" onclick="openFormWindow()">Відкрити форму</button>
+
+    <!-- Поле для пошуку -->
+    <input type="text" id="searchInput" placeholder="Пошук за даними..." onkeyup="searchData()" style="margin-top: 20px; padding: 8px; width: 20%;">
+
+    <table border="1" style="margin-top: 20px; width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>№ </th>
+                <th>Ім'я та прізвище</th>
+                <th>Ціна</th>
+                <th>Виробник</th>
+                <th>Серійний номер</th>
+                <th>Опис</th>
+                <th>Номер телефону</th>
+                <th>Тип</th>
+                <th>Модель</th>
+                <th>Статус</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+            <!-- Рядки таблиці додаються через JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
